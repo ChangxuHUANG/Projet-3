@@ -19,14 +19,15 @@ const supprimer = async function (event){
              if (!res.ok) {
                 console.log("probleme")
              }
-             return res.json() 
+             return res.text() 
         }).then(data=>{
             console.log("success") 
+            genererGalerie ()           
              
         }).catch(error=>
             console.log(error)
         )
-        genererGalerie() 
+        
         
 }
 
@@ -68,7 +69,7 @@ modalOpen.addEventListener("click", function openModal(event){
         piecesElements[i].addEventListener("click", supprimer)}
     })
             
-            async function genererGalerie(){   
+                async function genererGalerie(){   
                 const piecesNew = await fetch("http://localhost:5678/api/works").then(pieces=> pieces.json())
                 
                     // generer pour gallery1 
