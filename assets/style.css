@@ -145,14 +145,20 @@ li:hover {
 }
 .bouton button{
 	border-radius: 60px;
-	color: white;
-	background-color:#1D6154;
+	color:#1D6154; 
+	background-color:white;
 	font-size: 16px;
 	font-family: 'Syne';
 	padding: 5px 8px;
 	margin-left: 6px;
+	border: 1px solid #1D6154; 
 	
 }
+.bouton button:focus{ 
+	color: white; 
+	background-color: #1D6154; 
+}
+
 .bouton .btn-tous {
 	padding: 5px 29px;
 }

@@ -50,12 +50,30 @@ genererBouton(categories)
 
 const btnTout = document.querySelector(".btn-tous")
 btnTout.addEventListener("click", ()=>{
+    btnTout.style.backgroundColor = "#1D6154" 
+    btnTout.style.color = "white" 
+    
+    btnObjets.style.backgroundColor = "white" 
+    btnObjets.style.color = "#1D6154" 
+    btnAppartements.style.backgroundColor = "white" 
+    btnAppartements.style.color = "#1D6154" 
+    btnHR.style.backgroundColor = "white" 
+    btnHR.style.color = "#1D6154" 
     document.querySelector(".gallery").innerHTML = ""
     genererPieces(pieces)
 })
 
 const btnObjets = document.querySelector(".categorie1")
 btnObjets.addEventListener("click",()=>{
+    btnTout.style.backgroundColor = "white" 
+    btnTout.style.color = "#1D6154" 
+    
+    btnObjets.style.backgroundColor = "#1D6154" 
+    btnObjets.style.color = "white" 
+    btnAppartements.style.backgroundColor = "white" 
+    btnAppartements.style.color = "#1D6154" 
+    btnHR.style.backgroundColor = "white" 
+    btnHR.style.color = "#1D6154" 
     const piecesFiltrees1 = pieces.filter(function (piece) {
         return piece.categoryId == 1
     })
@@ -67,6 +85,15 @@ btnObjets.addEventListener("click",()=>{
 
 const btnAppartements = document.querySelector(".categorie2")
 btnAppartements.addEventListener("click",()=>{
+    btnTout.style.backgroundColor = "white" 
+    btnTout.style.color = "#1D6154"  
+    
+    btnObjets.style.backgroundColor = "white" 
+    btnObjets.style.color = "#1D6154" 
+    btnAppartements.style.backgroundColor = "#1D6154" 
+    btnAppartements.style.color = "white"  
+    btnHR.style.backgroundColor = "white" 
+    btnHR.style.color = "#1D6154" 
     const piecesFiltrees2 = pieces.filter(function (piece) {
         return piece.categoryId == 2
     })
@@ -78,6 +105,15 @@ btnAppartements.addEventListener("click",()=>{
 
 const btnHR = document.querySelector(".categorie3")
 btnHR.addEventListener("click",()=>{
+    btnTout.style.backgroundColor = "white" 
+    btnTout.style.color = "#1D6154"  
+    
+    btnObjets.style.backgroundColor = "white" 
+    btnObjets.style.color = "#1D6154" 
+    btnAppartements.style.backgroundColor = "white" 
+    btnAppartements.style.color = "#1D6154" 
+    btnHR.style.backgroundColor = "#1D6154" 
+    btnHR.style.color = "white" 
     const piecesFiltrees3 = pieces.filter(function (piece) {
         return piece.categoryId == 3
     })
